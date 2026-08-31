@@ -1,0 +1,23 @@
+/* Estilos personalizados del proyecto */
+body {
+background-color: #0f172a; /* Fondo oscuro moderno */
+color: #e2e8f0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Transición suave para las tarjetas de juegos */
+.card-juego {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border: none;
+background-color: #1e293b;
+color: #ffffff;
+}
+/* Efecto Hover interactivo */
+.card-juego:hover {
+transform: translateY(-8px);
+box-shadow: 0 12px 20px rgba(59, 130, 246, 0.3);
+}
+.hero-section {
+background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+border-radius: 1rem;
+padding: 3rem 1.5rem;
+}

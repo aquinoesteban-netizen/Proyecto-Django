@@ -1,0 +1,29 @@
+{% extends 'portal/base.html' %}
+{% block title %}Inicio - WikiGaming{% endblock %}
+{% block content %}
+<div class="hero-section text-center text-white mb-5 shadow">
+<h1 class="display-4 fw-bold">¡Bienvenido al Portal Gamer!</h1>
+<p class="lead">Descubre las novedades, guías y los juegos más populares de la comunidad.</p>
+<a href="{% url 'juegos' %}" class="btn btn-primary btn-lg mt-3 fw-bold">Explorar Catálogo</a>
+</div>
+<div class="row text-center">
+<div class="col-md-4 mb-3">
+<div class="p-3 bg-secondary bg-opacity-10 rounded">
+<h3>🎮 Multijugador</h3>
+<p>Títulos para disfrutar con amigos en línea.</p>
+</div>
+</div>
+<div class="col-md-4 mb-3">
+<div class="p-3 bg-secondary bg-opacity-10 rounded">
+<h3>🏆 Torneos</h3>
+<p>Enterate de los próximos eventos eSports.</p>
+</div>
+</div>
+<div class="col-md-4 mb-3">
+<div class="p-3 bg-secondary bg-opacity-10 rounded">
+<h3>⭐ Reseñas</h3>
+<p>Análisis de lanzamientos recientes.</p>
+</div>
+</div>
+</div>
+{% endblock %}

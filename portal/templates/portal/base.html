@@ -1,0 +1,28 @@
+{% load static %}
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}WikiGaming{% endblock %}</title>
+<!-- Carga Bootstrap 5 -->
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<!-- CSS Propio -->
+<link rel="stylesheet" href="{% static 'portal/css/estilos.css' %}">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<!-- Navbar reutilizable -->
+{% include 'portal/navbar.html' %}
+<!-- Contenido Dinámico -->
+<main class="container my-4 flex-grow-1">
+{% block content %}
+{% endblock %}
+</main>
+<!-- Footer -->
+<footer class="bg-dark text-center text-muted py-3 mt-auto border-top border-secondary">
+<small>Desarrollo Web — Proyecto WikiGaming</small>
+</footer>
+</body>
+</html>
