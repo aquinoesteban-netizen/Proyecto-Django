@@ -1,29 +1,45 @@
-{% extends 'portal/base.html' %}
-{% block title %}Inicio - WikiGaming{% endblock %}
-{% block content %}
-<div class="hero-section text-center text-white mb-5 shadow">
-<h1 class="display-4 fw-bold">¡Bienvenido al Portal Gamer!</h1>
-<p class="lead">Descubre las novedades, guías y los juegos más populares de la comunidad.</p>
-<a href="{% url 'juegos' %}" class="btn btn-primary btn-lg mt-3 fw-bold">Explorar Catálogo</a>
+{% extends 'portal/base.html' %} 
+{% block title %}Inicio - WikiArduino{% endblock %} 
+{% block content %} 
+<div
+    class="hero-section text-center text-white mb-5 shadow">
+    <h1 class="display-4 fw-bold">Bienvenido al Portal Arduino</h1>
+    <p class="lead">Descubrí la historia de esta plataforma y aprendé electrónica desde cero.</p> <a
+        href="{% url 'placas' %}" class="btn btn-primary btn-lg mt-3 fw-bold">Ver Tipos de Placas</a>
+</div>
+<div class="row mb-5">
+    <div class="col-md-8 mx-auto">
+        <div class="p-4 bg-secondary bg-opacity-10 rounded">
+            <h3>📚 Historia de Arduino</h3>
+            <p>Arduino nació en 2005 en Ivrea, Italia, como un proyecto de la mano de Massimo Banzi y su equipo, con el
+                objetivo de darle a estudiantes de diseño una herramienta fácil y económica para crear proyectos
+                electrónicos sin necesidad de ser ingenieros. El nombre viene de un bar llamado "Bar di Re Arduino",
+                donde se reunían sus creadores. Desde entonces, se convirtió en una de las plataformas de hardware libre
+                más usadas del mundo, gracias a su placa programáble, su lenguaje simple (basado en C/C++) y una enorme
+                comunidad que comparte proyectos y ayuda a quienes recién empiezan.</p>
+        </div>
+    </div>
 </div>
 <div class="row text-center">
-<div class="col-md-4 mb-3">
-<div class="p-3 bg-secondary bg-opacity-10 rounded">
-<h3>🎮 Multijugador</h3>
-<p>Títulos para disfrutar con amigos en línea.</p>
-</div>
-</div>
-<div class="col-md-4 mb-3">
-<div class="p-3 bg-secondary bg-opacity-10 rounded">
-<h3>🏆 Torneos</h3>
-<p>Enterate de los próximos eventos eSports.</p>
-</div>
-</div>
-<div class="col-md-4 mb-3">
-<div class="p-3 bg-secondary bg-opacity-10 rounded">
-<h3>⭐ Reseñas</h3>
-<p>Análisis de lanzamientos recientes.</p>
-</div>
-</div>
-</div>
+    <div class="col-md-4 mb-3">
+        <div class="p-3 bg-secondary bg-opacity-10 rounded">
+            <h3>🎓 Estudiantes</h3>
+            <p>Ideal para quienes están aprendiendo electrónica o programación y quieren ver sus conocimientos aplicados
+                en proyectos reales.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="p-3 bg-secondary bg-opacity-10 rounded">
+            <h3>🔧 Makers y aficionados</h3>
+            <p>Cualquier persona con curiosidad por crear objetos interactivos, robots o automatizaciones caseras.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="p-3 bg-secondary bg-opacity-10 rounded">
+            <h3>💻 Futuros desarrolladores</h3>
+            <p>Quienes buscan una puerta de entrada simple al mundo del hardware antes de pasar a proyectos más
+                avanzados.</p>
+        </div>
+    </div>
+</div> 
 {% endblock %}

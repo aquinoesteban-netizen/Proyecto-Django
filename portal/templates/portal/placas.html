@@ -1,0 +1,42 @@
+{% extends 'portal/base.html' %}
+{% block title %}Juegos Populares - WikiGaming{% endblock %}
+{% block content %}
+
+<h2 class="mb-4 text-center text-primary">Tipos de Placas Arduino</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card card-juego h-100">
+            <div class="card-body">
+                <h5 class="card-title text-warning">Arduino Uno</h5>
+                <p class="card-text">La placa más usada para empezar. Tiene 14 pines digitales y 6 analógicos, ideal
+                    para proyectos básicos y para aprender los fundamentos de la electrónica y programación.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0"> <span class="badge bg-primary">Principiantes</span> <span
+                    class="badge bg-success">Versatile</span> </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card card-juego h-100">
+            <div class="card-body">
+                <h5 class="card-title text-warning">Arduino Nano</h5>
+                <p class="card-text">Una versión compacta del Uno, con las mismas funciones pero en un tamaño mucho más
+                    chico. Perfecta para proyectos donde el espacio es limitado.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0"> <span class="badge bg-info">Compacta</span> <span
+                    class="badge bg-secondary">Portátil</span> </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card card-juego h-100">
+            <div class="card-body">
+                <h5 class="card-title text-warning">Arduino Mega</h5>
+                <p class="card-text">Versión más grande, con 54 pines digitales y 16 analógicos. Se usa en proyectos
+                    complejos que necesitan controlar muchos sensores y actuadores al mismo tiempo.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0"> <span class="badge bg-danger">Avanzada</span> <span
+                    class="badge bg-warning text-dark">Muchos pines</span> </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
